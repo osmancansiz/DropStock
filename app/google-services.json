@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "852377715580-l0qpvv6pv5ir7vnf3sku32ugn470a5a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cansiz.recyclerexample",
+            "certificate_hash": "28707508cd0330eb5c6a110d6f3e81b89452d1cd"
+          }
+        },
+        {
           "client_id": "852377715580-9djaun1aid8i1eud67s59gtsc4h6jkjk.apps.googleusercontent.com",
           "client_type": 3
         }

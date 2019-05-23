@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
     tools:context=".LoginPage">
 
     <ImageView
@@ -29,6 +30,14 @@
         android:hint="Şifre"
         android:layout_margin="10dp" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beni Hatırla"
+        android:layout_below="@id/password"
+        android:checked="false" />
+
     <TextView
         android:id="@+id/forgotpass"
         android:layout_width="wrap_content"
@@ -43,6 +52,7 @@
 
     <Button
         android:id="@+id/loginBtn"
+        android:onClick = "login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/forgotpass"

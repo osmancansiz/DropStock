@@ -44,21 +44,23 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView productName, productDescription;
+        TextView productName, productNumbers,productPrice;
         ImageView productImage, deleteproduct;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             productName = (TextView) itemView.findViewById(R.id.productName);
-            productDescription = (TextView) itemView.findViewById(R.id.productDescription);
+            productNumbers = (TextView) itemView.findViewById(R.id.productNumbers);
             productImage = (ImageView) itemView.findViewById(R.id.productImage);
+            productPrice = (TextView) itemView.findViewById(R.id.productPrice);
 
         }
 
         public void setData(Product selectedProduct, int position) {
 
             this.productName.setText(selectedProduct.getProductName());
-            this.productDescription.setText(selectedProduct.getProductDescription());
+            this.productNumbers.setText(selectedProduct.getProductNumbers());
+            this.productPrice.setText(selectedProduct.getProductPrice());
             this.productImage.setImageResource(selectedProduct.getImageID());
         }
 

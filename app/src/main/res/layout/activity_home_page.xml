@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
     tools:context=".HomePage">
 
     <ImageView
@@ -20,6 +21,7 @@
         android:padding="15dp"
         android:textStyle="bold|italic"
         android:drawableRight="@drawable/box"/>
+
     <Button
         android:id="@+id/stokListele"
         android:layout_width="match_parent"
@@ -32,5 +34,6 @@
         android:padding="15dp"
         android:textStyle="bold|italic"
         android:drawableRight="@drawable/list2"/>
+
 
 </RelativeLayout>

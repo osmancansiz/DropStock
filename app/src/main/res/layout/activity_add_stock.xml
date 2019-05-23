@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
     tools:context=".AddStock">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/urunad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürün Adı"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/urunad" />
+
+    <TextView
+        android:id="@+id/urunaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürün Adedi"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_below="@id/productName"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/productNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/urunaded" />
+
+    <TextView
+        android:id="@+id/urunfiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürün Fiyatı"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_below="@id/productNumbers"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/urunfiyat" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:layout_below="@id/productPrice" />
+
+
+</RelativeLayout>
