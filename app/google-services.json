@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "852377715580",
+    "firebase_url": "https://dropstock-db.firebaseio.com",
+    "project_id": "dropstock-db",
+    "storage_bucket": "dropstock-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852377715580:android:8c2929264985879c",
+        "android_client_info": {
+          "package_name": "com.example.cansiz.recyclerexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852377715580-9djaun1aid8i1eud67s59gtsc4h6jkjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgs0T1ObRcmEVzUwfm1Q62zxU-sCVn0rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852377715580-9djaun1aid8i1eud67s59gtsc4h6jkjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
