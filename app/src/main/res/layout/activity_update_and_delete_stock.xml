@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
-    tools:context=".AddStock">
+    tools:context=".UpdateAndDeleteStock">
 
     <TextView
         android:id="@+id/urunad"
@@ -18,7 +17,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/productName"
+        android:id="@+id/exName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
@@ -32,11 +31,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:textSize="20dp"
-        android:layout_below="@id/productName"
+        android:layout_below="@id/exName"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/productNumbers"
+        android:id="@+id/exNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -50,23 +49,30 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:textSize="20dp"
-        android:layout_below="@id/productNumbers"
+        android:layout_below="@id/exNumbers"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/productPrice"
+        android:id="@+id/exPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:layout_below="@id/urunfiyat" />
 
     <Button
-        android:id="@+id/addStockBtn"
+        android:id="@+id/updateStockButton"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ekle"
-        android:layout_below="@id/productPrice" />
+        android:text="Güncelle"
+        android:layout_below="@id/exPrice" />
 
+    <Button
+        android:id="@+id/deleteStockButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sil"
+        android:layout_below="@id/updateStockButton" />
 
 </RelativeLayout>

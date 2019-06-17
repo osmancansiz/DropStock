@@ -1,24 +1,38 @@
 package com.example.cansiz.recyclerexample;
 
-import java.util.ArrayList;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.ViewGroup;
 
-public class Product {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Product{
 
     private String productName;
     private String productNumbers;
     private String productPrice;
-    private int imageID;
+    private int imageID,id;
 
     public Product() {
     }
 
-    public Product(int imageID, String productName, String productNumbers,String productPrice) {
+
+    public Product(int id , int imageID, String productName, String productNumbers,String productPrice) {
+        this.id=id;
         this.imageID = imageID;
         this.productName = productName;
         this.productNumbers = productNumbers;
         this.productPrice = productPrice;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getImageID() {
         return imageID;

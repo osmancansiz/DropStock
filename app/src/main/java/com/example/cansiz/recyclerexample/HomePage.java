@@ -14,9 +14,10 @@ public class HomePage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
+        
+        Button stokEkle = (Button) findViewById(R.id.stokEkle);
         Button stokListele =  (Button) findViewById(R.id.stokListele);
-        Button stokEkle = (Button ) findViewById(R.id.stokEkle);
+
 
         stokEkle.setOnClickListener(new View.OnClickListener() {
             @Override

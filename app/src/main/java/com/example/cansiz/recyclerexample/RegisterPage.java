@@ -30,7 +30,7 @@ public class RegisterPage extends Activity {
         RegButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.veriEkle(ad.getText().toString(),soyad.getText().toString(),mail.getText().toString(),pass.getText().toString());
+                db.AddUser(ad.getText().toString(),soyad.getText().toString(),mail.getText().toString(),pass.getText().toString());
                 AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(RegisterPage.this);
                 dlgAlert.setMessage("Kayıt Başarılı");
                 dlgAlert.setTitle("DropStock");
