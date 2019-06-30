@@ -1,6 +1,6 @@
 package com.example.cansiz.recyclerexample;
 
 public class Config {
-    public static final String EMAIL ="need.mtw@gmail.com";
-    public static final String PASSWORD ="jktvrfge15";
+    public static final String EMAIL ="dropstockstoktakip@gmail.com";
+    public static final String PASSWORD ="droptopwop";
 }
