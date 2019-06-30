@@ -22,6 +22,7 @@ public class AddStock extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_stock);
 
+
         urun_Ad = (EditText) findViewById(R.id.productName);
         urun_Adet = (EditText)findViewById(R.id.productNumbers);
         urun_Fiyat = (EditText) findViewById(R.id.productPrice);
@@ -40,7 +41,7 @@ public class AddStock extends Activity {
                     String valueUrunFiyat= urun_Fiyat.getText().toString();
                     int finalUrunFiyat=Integer.parseInt(valueUrunFiyat);
 
-                    db.AddStock(valueUrunAd,finalUrunFiyat,finalUrunAdet);
+                    db.AddStock(valueUrunAd,finalUrunAdet,finalUrunFiyat);
 
                     AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(AddStock.this);
                     dlgAlert.setMessage("Kayıt Başarılı");

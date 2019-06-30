@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.net.URL;
-
-public class HomePage extends Activity {
+public class AdminHomePage extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.activity_admin_home_page);
         
         Button stokEkle = (Button) findViewById(R.id.stokEkle);
         Button stokListele =  (Button) findViewById(R.id.stokListele);
@@ -22,7 +20,7 @@ public class HomePage extends Activity {
         stokEkle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this,AddStock.class);
+                Intent intent = new Intent(AdminHomePage.this,AddStock.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +28,7 @@ public class HomePage extends Activity {
         stokListele.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this,MainActivity.class);
+                Intent intent = new Intent(AdminHomePage.this,MainActivity.class);
                 startActivity(intent);
             }
         });

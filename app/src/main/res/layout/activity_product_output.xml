@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductOutput">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/urunAdiText"
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ürün Adi" />
+    <Spinner
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_show_output"
+        android:layout_below="@+id/urunAdiText"
+        android:spinnerMode="dropdown"
+        android:outlineProvider="paddedBounds" />
+
+    <TextView
+        android:id="@+id/urunGirisText"
+        android:layout_below="@id/spinner_show_output"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ürün Çıkış" />
+
+    <EditText
+        android:id="@+id/productOutputText"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunGirisText" />
+
+    <Button
+        android:id="@+id/productOutput"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ürün Çıkışı Yap"
+        android:layout_below="@id/productOutputText" />
+
+</RelativeLayout>

@@ -7,7 +7,22 @@
     android:background="@color/cardview_light_background"
     tools:context=".LoginPage">
 
+    <TextView
+    android:id="@+id/adminPage"
+    android:clickable="true"
+    android:onClick="adminClick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Yönetici"
+    android:textSize="15dp"
+    android:layout_marginRight="20dp"
+    android:textStyle="bold"
+    android:layout_alignParentRight="true"
+    tools:ignore="OnClick" />
+
     <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/logo" />
@@ -40,6 +55,8 @@
 
     <TextView
         android:id="@+id/forgotpass"
+        android:clickable="true"
+        android:onClick="forgotClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
@@ -48,7 +65,7 @@
         android:textStyle="bold"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        />
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/loginBtn"
@@ -57,7 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/forgotpass"
         android:layout_centerInParent="true"
-        android:text="Giriş" />
+        android:text="Giriş"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/registerBtn"

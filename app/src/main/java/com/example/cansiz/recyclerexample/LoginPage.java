@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -73,7 +72,6 @@ public class LoginPage extends Activity {
 
     public void login(){
         if(email.getText().toString().length() != 0 && password.getText().length() != 0){
-
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(email.getWindowToken(), 0);
 
@@ -91,17 +89,25 @@ public class LoginPage extends Activity {
                 loginPrefsEditor.clear();
                 loginPrefsEditor.commit();
             }
-
-            HomePageDirectory();
         }else{
             Toast.makeText(getApplicationContext(),"Lütfen alanları doldurunuz.",Toast.LENGTH_SHORT).show();
         }
     }
 
     public void HomePageDirectory(){
-        Intent intent = new Intent(LoginPage.this,HomePage.class);
+        Intent intent = new Intent(LoginPage.this,UserHomePage.class);
         LoginPage.this.startActivity(intent);
         LoginPage.this.finish();
+    }
+
+    public void forgotClick(View view) {
+        Intent intent = new Intent(LoginPage.this,ForgotPassword.class);
+        LoginPage.this.startActivity(intent);
+    }
+
+    public void adminClick(View view) {
+        Intent intent = new Intent(LoginPage.this,AdminLoginPage.class);
+        LoginPage.this.startActivity(intent);
     }
 }
 

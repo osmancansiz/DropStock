@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".UserHomePage">
+
+    <TextView
+        android:id="@+id/signOut"
+        android:clickable="true"
+        android:onClick="adminClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çıkış Yap"
+        android:textSize="15dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        tools:ignore="OnClick" />
+
+
+
+    <Button
+    android:layout_below="@id/adminPage"
+    android:id="@+id/urunGiris"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ürün Giriş"
+    android:textSize="20sp"
+    android:padding="15dp"
+    android:layout_marginTop="35dp"
+    android:textStyle="bold|italic"
+    android:drawableRight="@drawable/urungiris"/>
+
+    <Button
+        android:id="@+id/urunCikis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/urunGiris"
+        android:text="Ürün Çıkış"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textStyle="bold|italic"
+        android:drawableRight="@drawable/urungiris"/>
+
+    <Button
+        android:id="@+id/urunRapor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/urunCikis"
+        android:text="Ürün Rapor"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textStyle="bold|italic"
+        android:drawableRight="@drawable/urungiris"/>
+</RelativeLayout>

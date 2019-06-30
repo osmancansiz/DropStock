@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportPage">
+
+    <Button
+        android:layout_below="@id/logo"
+        android:id="@+id/urunRaporButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ürün Rapor"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:textStyle="bold|italic"
+        android:drawableRight="@drawable/list"/>
+
+    <Button
+        android:id="@+id/girisRaporButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunRaporButton"
+        android:text="Giriş Rapor"
+        android:textSize="20sp"
+        android:padding="35dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/cikisRaporButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunRaporButton"
+        android:layout_alignParentRight="true"
+        android:text="Çıkış Rapor"
+        android:textSize="20sp"
+        android:padding="35dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

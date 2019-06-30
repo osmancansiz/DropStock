@@ -41,24 +41,28 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        final Product product = mProductList.get(position);
+        try{
+            final Product product = mProductList.get(position);
 
-        holder.productName.setText(product.getProductName());
-        holder.productNumbers.setText(product.getProductNumbers());
-        holder.productPrice.setText(product.getProductPrice());
+            holder.productName.setText(product.getProductName());
+            holder.productNumbers.setText(product.getProductNumbers());
+            holder.productPrice.setText(product.getProductPrice());
 
-        // Güncelleme ve Silmeyi burada yapacam.Unutma!
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                listItemClickListener.clickPosition(product.getId(), product.getProductName(),product.getProductNumbers(),product.getProductPrice());
-                //Toast.makeText(view.getContext(),position + "",Toast.LENGTH_SHORT).show();
-            }
-        });
+            // Güncelleme ve Silmeyi burada yapacam.Unutma!
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listItemClickListener.clickPosition(product.getId(), product.getProductName(),product.getProductNumbers(),product.getProductPrice());
+                    //Toast.makeText(view.getContext(),position + "",Toast.LENGTH_SHORT).show();
+                }
+            });
 
-        Product selectedProduct = mProductList.get(position);
-        holder.setData(selectedProduct, position);
-
+            Product selectedProduct = mProductList.get(position);
+            holder.setData(selectedProduct, position);
+        }
+        catch (Exception ex){
+            Toast.makeText(context,"Değerleri Sadece Admin Değiştirebilir",Toast.LENGTH_SHORT).show();
+        }
     }
 
 

@@ -30,6 +30,7 @@ public class UpdateAndDeleteStock extends Activity {
         ad = (EditText) findViewById(R.id.exName);
         adet = (EditText)findViewById(R.id.exNumbers);
         fiyat = (EditText) findViewById(R.id.exPrice);
+
         updateButton = (Button) findViewById(R.id.updateStockButton);
         deleteButton = (Button) findViewById(R.id.deleteStockButton);
 
