@@ -2,6 +2,7 @@ package com.example.cansiz.recyclerexample;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,7 +44,12 @@ public class UserHomePage extends Activity {
         });
     }
 
-    public void adminClick(View view) {
+    public void signOut(View view) {
+        SharedPreferences preferences =getSharedPreferences("loginPrefs",getApplicationContext().MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear();
+        editor.commit();
+
         Intent intent = new Intent(UserHomePage.this,LoginPage.class);
         startActivity(intent);
         finish();

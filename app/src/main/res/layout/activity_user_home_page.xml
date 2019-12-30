@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/signOut"
         android:clickable="true"
-        android:onClick="adminClick"
+        android:onClick="signOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Çıkış Yap"
@@ -23,7 +23,7 @@
 
 
     <Button
-    android:layout_below="@id/adminPage"
+    android:layout_below="@id/signOut"
     android:id="@+id/urunGiris"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
