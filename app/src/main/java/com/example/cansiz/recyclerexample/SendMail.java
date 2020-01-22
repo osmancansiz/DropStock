@@ -24,11 +24,11 @@ public class SendMail extends AsyncTask<Void, Void, Void> {
 
     private String email;
     private String subject;
-    private int randomMessage;
+    private String randomMessage;
 
     private ProgressDialog progressDialog;
 
-    public SendMail(Context context, String email, String subject, int randomMessage){
+    public SendMail(Context context, String email, String subject, String randomMessage){
         //Initializing variables
         this.context = context;
         this.email = email;
@@ -85,7 +85,7 @@ public class SendMail extends AsyncTask<Void, Void, Void> {
             //Adding subject
             mm.setSubject(subject);
             //Adding message
-            mm.setText(String.valueOf(randomMessage));
+            mm.setText(randomMessage);
 
             //Sending email
             Transport.send(mm);

@@ -64,7 +64,7 @@ public class ForgotPassword extends Activity {
         int high = 9999;
         result = r.nextInt(high-low) + low;
 
-        SendMail sm = new SendMail(this,email,"DropStock Şifre Yenileme",result);
+        SendMail sm = new SendMail(this,email,"DropStock Şifre Yenileme","Doğrulama kodunuz:" + String.valueOf(result));
         sm.execute();
     }
 
